@@ -18,6 +18,9 @@ public class AirthmaticCalculation {
     }public static double Subtraction(double x,double y){
         return x-y;
     }
+    public static double Multiplication(double x,double y){
+        return x*y;
+    }
     public static void main(String[] args) {
          try{
        
@@ -25,12 +28,17 @@ public class AirthmaticCalculation {
         double num1=Integer.parseInt(s1);
         String s2=   JOptionPane.showInputDialog("Enter 2nd number");
         double num2=Integer.parseInt(s2);
+        
         double add=AirthmaticCalculation.Addition(num1, num2);
        JOptionPane.showMessageDialog(null, "Sum of "+num1+" and "+num2+" is "+add);
+       
        double subtract=AirthmaticCalculation.Subtraction(num1, num2);
        JOptionPane.showMessageDialog(null, "Difference of "+num1+" and "+num2+" is "+subtract);
+       
+        double multiply=AirthmaticCalculation.Multiplication(num1, num2);
+        JOptionPane.showMessageDialog( null, "Product of "+num1+" and "+num2+" is "+multiply);
         
-        }catch(Exception e){
+         }catch(Exception e){
             JOptionPane.showMessageDialog( null, "Enter number only", "Failure", JOptionPane.ERROR_MESSAGE);
         }
     }
