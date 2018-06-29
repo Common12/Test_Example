@@ -15,6 +15,8 @@ public class AirthmaticCalculation {
 
     public static double Addition(double x,double y){
         return x+y;
+    }public static double Subtraction(double x,double y){
+        return x-y;
     }
     public static void main(String[] args) {
          try{
@@ -25,6 +27,8 @@ public class AirthmaticCalculation {
         double num2=Integer.parseInt(s2);
         double add=AirthmaticCalculation.Addition(num1, num2);
        JOptionPane.showMessageDialog(null, "Sum of "+num1+" and "+num2+" is "+add);
+       double subtract=AirthmaticCalculation.Subtraction(num1, num2);
+       JOptionPane.showMessageDialog(null, "Difference of "+num1+" and "+num2+" is "+subtract);
         
         }catch(Exception e){
             JOptionPane.showMessageDialog( null, "Enter number only", "Failure", JOptionPane.ERROR_MESSAGE);
