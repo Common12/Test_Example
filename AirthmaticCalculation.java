@@ -42,7 +42,7 @@ public class AirthmaticCalculation {
         double multiply=AirthmaticCalculation.Multiplication(num1, num2);
         JOptionPane.showMessageDialog( null, "Product of "+num1+" and "+num2+" is "+multiply);
         
-        double divide=AirthmaticCalculation.Multiplication(num1, num2);
+        double divide=AirthmaticCalculation.Division(num1, num2);
         JOptionPane.showMessageDialog( null, "division of "+num1+" and "+num2+" is "+divide);
         
          }catch(Exception e){
