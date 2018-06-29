@@ -24,7 +24,7 @@ public class AirthmaticCalculation {
         String s2=   JOptionPane.showInputDialog("Enter 2nd number");
         double num2=Integer.parseInt(s2);
         double add=AirthmaticCalculation.Addition(num1, num2);
-        System.out.println("Sum of "+num1+" and "+num2+" numbers is "+add);
+       JOptionPane.showMessageDialog(null, "Sum of "+num1+" and "+num2+" is "+add);
         
         }catch(Exception e){
             JOptionPane.showMessageDialog( null, "Enter number only", "Failure", JOptionPane.ERROR_MESSAGE);
